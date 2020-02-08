@@ -1,0 +1,19 @@
+
+.row.display-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.thumbnail>img {
+	width:250px;
+	height:250px;
+    object-fit: scale-down;
+}
+
+.thumbnail {
+	padding:0;
+}
+
+.thumbnail .caption-full {
+	padding: 9px;
+}

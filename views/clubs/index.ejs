@@ -1,4 +1,4 @@
-<% include ./partials/header %>
+<% include ../partials/header %>
 
 <div class="container">
 	
@@ -18,15 +18,18 @@
 	</header>
 	
 	<div class="row text-center" style="display:flex; flex-wrap:wrap;">
-		<% clubs.forEach(function(clubs){ %>
+		<% clubs.forEach(function(club){ %>
 		<div class="col-md-3 col-sm-6">
 			<div class="thumbnail">
-				<img src="<%= clubs.image %>">
+				<img src="<%= club.image %>">
 				<div class="caption">
 					<h4>
-						<%= clubs.name %>
+						<%= club.name %>
 					</h4>
 				</div>
+				<p>
+					<a href="/clubs/<%= club._id %>" class="btn btn-primary">More Info</a>
+				</p>
 
 			</div>
 		</div>
@@ -34,4 +37,4 @@
 		</div>
 	</div>
 
-<% include ./partials/footer %>
+<% include ../partials/footer %>
